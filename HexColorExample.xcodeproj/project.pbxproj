@@ -11,6 +11,7 @@
 		816F87962C139F830061C5C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816F87952C139F830061C5C2 /* ContentView.swift */; };
 		816F87982C139F840061C5C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816F87972C139F840061C5C2 /* Assets.xcassets */; };
 		816F879B2C139F840061C5C2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816F879A2C139F840061C5C2 /* Preview Assets.xcassets */; };
+		816F87A32C139FAC0061C5C2 /* NVMColor in Frameworks */ = {isa = PBXBuildFile; productRef = 816F87A22C139FAC0061C5C2 /* NVMColor */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				816F87A32C139FAC0061C5C2 /* NVMColor in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = HexColorExample;
+			packageProductDependencies = (
+				816F87A22C139FAC0061C5C2 /* NVMColor */,
+			);
 			productName = HexColorExample;
 			productReference = 816F87902C139F830061C5C2 /* HexColorExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 816F87872C139F830061C5C2;
+			packageReferences = (
+				816F87A12C139FAC0061C5C2 /* XCRemoteSwiftPackageReference "NVMColor_swift" */,
+			);
 			productRefGroup = 816F87912C139F830061C5C2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		816F87A12C139FAC0061C5C2 /* XCRemoteSwiftPackageReference "NVMColor_swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NVMNovem/NVMColor_swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		816F87A22C139FAC0061C5C2 /* NVMColor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 816F87A12C139FAC0061C5C2 /* XCRemoteSwiftPackageReference "NVMColor_swift" */;
+			productName = NVMColor;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 816F87882C139F830061C5C2 /* Project object */;
 }
